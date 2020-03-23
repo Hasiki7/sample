@@ -1,10 +1,14 @@
 package com.hasiki.springboot.domain.posts;
 
 import com.hasiki.springboot.domain.BaseTimeEntity;
+import com.hasiki.springboot.web.dto.PostsListResponseDto;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.transaction.annotation.Transactional;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @NoArgsConstructor
@@ -34,7 +38,4 @@ public class Posts extends BaseTimeEntity {
         this.title = title;
         this.content = content;
     }
-
-
-
 }
