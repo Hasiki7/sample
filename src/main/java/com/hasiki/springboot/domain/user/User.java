@@ -45,4 +45,8 @@ public class User extends BaseTimeEntity {
         return this;
     }
 
+    public String getRolekey(){
+        return this.role.getKey();
+    }
+
 }
